@@ -24,10 +24,17 @@ export const MenuItem = ({
   item: string;
   children?: React.ReactNode;
 }) => {
+  // State to manage click status
+  const [isClicked, setIsClicked] = useState(false);
+
   return (
     <div
-      onMouseEnter={() => setActive(item)}
-      onMouseLeave={() => setActive(null)} // Turns off when hovering out
+      onMouseEnter={() => !isClicked && setActive(item)}
+      onMouseLeave={() => !isClicked && setActive(null)}
+      onClick={() => {
+        setActive(item);
+        setIsClicked(true);
+      }}
       className="relative"
     >
       <motion.p
@@ -46,11 +53,11 @@ export const MenuItem = ({
             <div className="absolute top-[calc(100%_+_1.7rem)] left-1/2 transform -translate-x-1/2">
               <motion.div
                 transition={transition}
-                layoutId="active" // layoutId ensures smooth animation
+                layoutId="active"
                 className="bg-white dark:bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xl"
               >
                 <motion.div
-                  layout // layout ensures smooth animation
+                  layout
                   className="w-max h-full p-4"
                 >
                   {children}
@@ -117,7 +124,7 @@ export const HoveredLink = ({ children, ...rest }: any) => {
   return (
     <Link
       {...rest}
-      className="text-neutral-700 dark:text-neutral-200 hover:text-black"
+      className="text-neutral-700 dark:text-neutral-200 hover:text-black dark:hover:text-gray-200"
     >
       {children}
     </Link>
