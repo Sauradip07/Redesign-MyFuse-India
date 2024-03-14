@@ -10,6 +10,8 @@ import { cn } from "@/utils/cn";
 
 export function NavbarDemo({ className }: { className?: string }): any {
   const [active, setActive] = useState<string | null>(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // State to control menu visibility on mobile
+
   return (
     <nav className="bg-white dark:bg-black fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -35,14 +37,27 @@ export function NavbarDemo({ className }: { className?: string }): any {
           </button>
         </div>
         <div
-          className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          className="block w-full md:hidden" // Show on mobile only
+          id="navbar-mobile"
+        >
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)} // Toggle menu visibility
+            className="text-black dark:text-white"
+          >
+            ☰
+          </button>
+        </div>
+        <div
+          className={`${
+            isMenuOpen ? "block" : "hidden"
+          } w-full md:block md:w-auto`} // Show menu on mobile if isMenuOpen is true
           id="navbar-sticky"
         >
           <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-black md:dark:bg-black dark:bg-black">
             <Menu setActive={setActive}>
-              <div className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white ">
+              <li className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white ">
                 <a href="https://www.myfuse.in/homepage/about">Home</a>
-              </div>
+              </li>
               <MenuItem setActive={setActive} active={active} item="Sign In">
                 <div className="flex flex-col space-y-4 text-sm">
                   <HoveredLink href="https://www.myfuse.in/login-con/index.php">
@@ -56,9 +71,9 @@ export function NavbarDemo({ className }: { className?: string }): any {
                   </HoveredLink>
                 </div>
               </MenuItem>
-              <div className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white ">
-    <a href="https://www.myfuse.in/homepage/contact">Contact</a>
-  </div>
+              <li className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white ">
+                <a href="https://www.myfuse.in/homepage/contact">Contact</a>
+              </li>
               <MenuItem setActive={setActive} active={active} item="Jobs">
                 <div
                   id="dropdownDefaultButton"
@@ -81,17 +96,12 @@ export function NavbarDemo({ className }: { className?: string }): any {
                   <HoveredLink href="/individual">Other</HoveredLink>
                 </div>
               </MenuItem>
-              {/* <MenuItem setActive={setActive} active={active} item="About Us">
-        <div className="flex flex-col space-y-4 text-sm">
-    <a href="https://www.myfuse.in/homepage/about">Hobby</a>
-  </div>
-        </MenuItem> */}
-              <div className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white ">
+              <li className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white ">
                 <a href="https://www.myfuse.in/homepage/about">About Us</a>
-              </div>
-              <div className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white ">
+              </li>
+              <li className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white ">
                 <a href="https://www.myfuse.in/homepage/blog">Blogs</a>
-              </div>
+              </li>
             </Menu>
           </ul>
         </div>
