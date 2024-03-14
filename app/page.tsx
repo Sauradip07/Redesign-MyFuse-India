@@ -1,5 +1,5 @@
 "use client";
-import { HeroParallaxDemo } from './HeroParallax/HeroParallaxDemo';
+import { HeroParallaxDemo } from './HeroParallax/page';
 export default function Home() {
 
   return (
