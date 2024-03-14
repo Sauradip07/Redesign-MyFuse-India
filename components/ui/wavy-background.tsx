@@ -10,7 +10,7 @@ export const WavyBackground = ({
    colors,
    waveWidth,
    backgroundFill,
-   blur = 5,
+   blur = 4,
    speed = "fast",
    waveOpacity = 0.5,
    ...props
@@ -42,7 +42,7 @@ export const WavyBackground = ({
          case "fast":
             return 0.002;
          default:
-            return 0.001;
+            return 0.002;
       }
    };
 
@@ -61,6 +61,7 @@ export const WavyBackground = ({
       render();
    };
 
+   //color of wave animation
    const waveColors = colors ?? [
       "#38bdf8",
       "#818cf8",
@@ -68,6 +69,7 @@ export const WavyBackground = ({
       "#e879f9",
       "#22d3ee",
    ];
+   //logic of wave animation
    const drawWave = (n: number) => {
       nt += getSpeed();
       for (i = 0; i < n; i++) {
@@ -84,6 +86,7 @@ export const WavyBackground = ({
    };
 
    let animationId: number;
+   //Part Of wave animation
    const render = () => {
       ctx.fillStyle = backgroundFill || "black";
       ctx.globalAlpha = waveOpacity || 0.5;
@@ -110,11 +113,7 @@ export const WavyBackground = ({
    }, []);
 
    return (
-      <div
-         className={cn(
-            "flex flex-col items-center justify-center",
-            containerClassName
-         )}>
+      <div>
          <canvas
             className="relative inset-0 z-0"
             ref={canvasRef}
@@ -122,9 +121,7 @@ export const WavyBackground = ({
             style={{
                ...(isSafari ? { filter: `blur(${blur}px)` } : {}),
             }}></canvas>
-         <div className={cn("relative z-10", className)} {...props}>
-            {children}
-         </div>
+         <div className="absolute">Hii</div>
       </div>
    );
 };
