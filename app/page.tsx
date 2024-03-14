@@ -1,11 +1,15 @@
 "use client";
-import { HeroParallaxDemo } from './HeroParallax/page';
+import { HeroParallaxDemo } from "./HeroParallax/page";
+import { WavyBackgroundDemo } from "./RegiterSection/page";
 export default function Home() {
-
-  return (
+   return (
       <div>
-        <HeroParallaxDemo />
+         <div>
+            <HeroParallaxDemo />
+         </div>
+         <div>
+            <WavyBackgroundDemo />
+         </div>
       </div>
-  );
+   );
 }
-
