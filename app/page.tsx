@@ -1,10 +1,10 @@
 "use client";
-import { EvervaultCardDemo } from '../components/EvervaultCardDemo';
+import { HeroParallaxDemo } from './HeroParallax/HeroParallaxDemo';
 export default function Home() {
 
   return (
       <div>
-        <EvervaultCardDemo />
+        <HeroParallaxDemo />
       </div>
   );
 }
