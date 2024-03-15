@@ -4,8 +4,10 @@ import { HeroParallaxDemo } from "./HeroParallax/page";
 export default function Home() {
    return (
       <div>
-         <HeroParallaxDemo />
-         <div>
+         <div className="HeroSection">   
+            <HeroParallaxDemo />
+         </div>
+         <div className="Register Section">
           <GlobeDemo />
          </div>
       </div>
