@@ -5,10 +5,12 @@ import { HeroParallaxDemo } from "./HeroParallax/page";
 import { Button } from "@/components/ui/button";
 import { SpotlightPreview } from "./Spolight/page";
 import { CardHoverEffectDemo } from "./CardHoverEffect/page";
+import {InfiniteMovingCardsDemo} from "./InfiniteMoving/Page";
 export default function Home() {
    return (
       <div>
          <div className="HeroSection">
+            
             <HeroParallaxDemo />
          </div>
          <div className="Register Section pt-40 justify-center text-center">
@@ -34,6 +36,9 @@ export default function Home() {
             <SpotlightPreview />
          </div>
          {/* Button Added */}
+         <div><InfiniteMovingCardsDemo /></div>
+         
+         
       </div>
    );
 }
