@@ -33,8 +33,8 @@ export default function Home() {
          </div>
          <div className="pt-40 pb-40"></div>
          {/* Button Added */}
-         
          <div>
+            {/* Data Change for the spolight */}
             <SpotlightPreview />
          </div>
          {/* Button Added */}
