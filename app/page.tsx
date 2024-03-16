@@ -5,6 +5,7 @@ import { HeroParallaxDemo } from "./HeroParallax/page";
 import { Button } from "@/components/ui/button";
 import { SpotlightPreview } from "./Spolight/page";
 import { CardHoverEffectDemo } from "./CardHoverEffect/page";
+import {InfiniteMovingCardsDemo} from "./infinite scroll/Page"
 export default function Home() {
    return (
       <div>
@@ -32,10 +33,14 @@ export default function Home() {
          </div>
          <div className="pt-40 pb-40"></div>
          {/* Button Added */}
+         
          <div>
             <SpotlightPreview />
          </div>
          {/* Button Added */}
+         <div>
+            <InfiniteMovingCardsDemo />
+         </div>
       </div>
    );
 }
