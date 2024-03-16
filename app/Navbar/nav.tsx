@@ -43,7 +43,7 @@ export function NavbarDemo({ className }: { className?: string }): any {
                   isMenuOpen ? "block" : "hidden"
                } w-full md:block md:w-auto`} // Show menu on mobile if isMenuOpen is true
                id="navbar-sticky">
-               <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-black md:dark:bg-black text-xs md:text-base">
+               <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-black md:dark:bg-black text-[10px] md:text-base">
                   <Menu setActive={setActive}>
                      <li className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white ">
                         <a href="https://www.myfuse.in/homepage/about">Home</a>
@@ -51,7 +51,7 @@ export function NavbarDemo({ className }: { className?: string }): any {
                      <MenuItem
                         setActive={setActive}
                         active={active}
-                        item="Sign In">
+                        item="Sign&#160;In&#160;&#11167;">
                         <div className="flex flex-col space-y-4 text-sm">
                            <HoveredLink href="https://www.myfuse.in/login-con/index.php">
                               Are you a Student?
@@ -72,7 +72,7 @@ export function NavbarDemo({ className }: { className?: string }): any {
                      <MenuItem
                         setActive={setActive}
                         active={active}
-                        item="Jobs">
+                        item="Jobs&#160;&#11167;">
                         <div
                            id="dropdownDefaultButton"
                            data-dropdown-toggle="dropdown"
@@ -101,7 +101,7 @@ export function NavbarDemo({ className }: { className?: string }): any {
                      </MenuItem>
                      <li className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white ">
                         <a href="https://www.myfuse.in/homepage/about">
-                           About Us
+                           About&#160;Us
                         </a>
                      </li>
                      <li className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white ">
