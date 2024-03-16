@@ -43,7 +43,11 @@ const config: Config = {
       },
     },
   },
+<<<<<<< HEAD
   plugins: [addVariablesForColors],
+=======
+  plugins: [require("tailwindcss-animate")],
+>>>>>>> 5fc5f9011b938e0ef6ff169e13a58c47157e31f5
 };
 export default config;
 function addVariablesForColors({ addBase, theme }: any) {

@@ -13,6 +13,7 @@ export default function Home() {
             
             <HeroParallaxDemo />
          </div>
+         {/* Sponcers All logo like Cursor or create running log design  */}
          <div className="Register Section pt-40 justify-center text-center">
             <GlobeDemo />
          </div>
