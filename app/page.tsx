@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { SpotlightPreview } from "./Spolight/page";
 import { CardHoverEffectDemo } from "./CardHoverEffect/page";
 import { InfiniteMovingCardsDemo } from "./infinite scroll/Page";
+import { TripleMeteorsDemo } from "./MeteorsCard/Page";
 import OnlineCV from "./onlineCv/Page";
 import StatsCounterSection from "./onlineCv/StatsCounterSection";
 export default function Home() {
@@ -43,6 +44,9 @@ export default function Home() {
       {/* Button Added */}
       <div>
         <InfiniteMovingCardsDemo />
+      </div>
+      <div>
+        <TripleMeteorsDemo/>
       </div>
       <div>
 {/* <OnlineCV/>
