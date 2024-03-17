@@ -1,5 +1,7 @@
 "use client";
 import React, { useState } from "react";
+import { ThemeProvider } from 'styled-components'
+import { lightTheme, darkTheme } from './theme'
 import {
   HoveredLink,
   Menu,
@@ -10,45 +12,23 @@ import { cn } from "@/utils/cn";
 
 export function NavbarDemo({ className }: { className?: string }): any {
   const [active, setActive] = useState<string | null>(null);
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // State to control menu visibility on mobile
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <nav className="bg-white dark:bg-black fixed w-full z-50 top-0 start-0 border-b border-gray-200 dark:border-gray-900">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a
-          href="https://www.myfuse.in/home"
-          className="flex items-center space-x-3 rtl:space-x-reverse"
-        >
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            MyFuse.In
-          </span>
+      <div className="max-w-screen-xl flex items-center justify-between mx-auto p-2"> {/* Reduced padding */}
+        <a href="https://www.myfuse.in/home" className="flex items-center space-x-2 rtl:space-x-reverse"> {/* Reduced spacing */}
+          <span className="self-center text-lg font-semibold whitespace-nowrap dark:text-white">MyFuse.In</span> {/* Reduced font size */}
         </a>
-        <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <button
-            type="button"
-            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Get started
-          </button>
+        <div className="flex md:order-2 space-x-2 md:space-x-0 rtl:space-x-reverse"> {/* Reduced spacing */}
+          <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button> {/* Reduced button size */}
         </div>
-        <div
-          className="block w-full md:hidden" // Show on mobile only
-          id="navbar-mobile"
-        >
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)} // Toggle menu visibility
-            className="text-black dark:text-white"
-          >
-            ☰
-          </button>
+        <div className="block w-full md:hidden" id="navbar-mobile">
+          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-black dark:text-white">☰</button>
         </div>
-        <div
-          className={`${
-            isMenuOpen ? "block" : "hidden"
-          } w-full md:block md:w-auto`} // Show menu on mobile if isMenuOpen is true
-          id="navbar-sticky"
-        >
-          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-black md:dark:bg-black text-[10px] md:text-base">
+        <div className={`${isMenuOpen ? "block" : "hidden"} w-full md:block md:w-auto`} id="navbar-sticky">
+          <ul className="flex flex-col p-1 md:p-0 mt-1 font-medium border-gray-100 rounded-lg bg-gray-50 md:space-x-4 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-black md:dark:bg-black text-[10px] md:text-base"> {/* Reduced padding and spacing */}
+
             <Menu setActive={setActive}>
               <li className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white ">
                 <a href="https://www.myfuse.in/homepage/about">Home</a>
