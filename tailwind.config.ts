@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { any } from "three/examples/jsm/nodes/Nodes.js";
 const defaultTheme = require("tailwindcss/defaultTheme");
  
 const colors = require("tailwindcss/colors");
@@ -6,7 +7,7 @@ const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
 
-const config: Config = {
+const config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
