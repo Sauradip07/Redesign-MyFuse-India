@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { HeroParallax } from "../../components/ui/hero-parallax";
- 
+
 export function HeroParallaxDemo() {
   return <HeroParallax products={products} />;
 }
@@ -24,7 +24,7 @@ export const products = [
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/rogue.png",
   },
- 
+
   {
     title: "Editorially",
     link: "https://editorially.org",
@@ -43,7 +43,7 @@ export const products = [
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
   },
- 
+
   {
     title: "Algochurn",
     link: "https://algochurn.com",
@@ -74,7 +74,7 @@ export const products = [
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
   },
- 
+
   {
     title: "Creme Digital",
     link: "https://cremedigital.com",
