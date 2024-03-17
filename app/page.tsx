@@ -6,7 +6,8 @@ import { Button } from "@/components/ui/button";
 import { SpotlightPreview } from "./Spolight/page";
 import { CardHoverEffectDemo } from "./CardHoverEffect/page";
 import { InfiniteMovingCardsDemo } from "./infinite scroll/Page";
-
+import OnlineCV from "./onlineCv/Page";
+import StatsCounterSection from "./onlineCv/StatsCounterSection";
 export default function Home() {
   return (
     <div>
@@ -44,7 +45,8 @@ export default function Home() {
         <InfiniteMovingCardsDemo />
       </div>
       <div>
-
+<OnlineCV/>
+<StatsCounterSection/>
       </div>
     </div>
   );
