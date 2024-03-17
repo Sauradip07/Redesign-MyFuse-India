@@ -1,38 +1,43 @@
 import React, { useEffect, useState } from "react";
-import { cn } from "@/utils/cn";
+import { cn } from "@/utils/cn"; // Importing a utility function for classnames concatenation
 
+// InfiniteMovingCards Component: Renders a list of items with an infinite moving animation
 export const InfiniteMovingCards = ({
-  items,
-  direction = "left",
-  speed = "fast",
-  pauseOnHover = true,
-  className,
+  items, // List of items to display
+  direction = "left", // Direction of animation (default: left)
+  speed = "fast", // Speed of animation (default: fast)
+  pauseOnHover = true, // Whether to pause animation on hover (default: true)
+  className, // Additional CSS classes
 }) => {
-  const containerRef = React.useRef(null);
-  const scrollerRef = React.useRef(null);
-  const [start, setStart] = useState(false);
+  const containerRef = React.useRef(null); // Reference to the container element
+  const scrollerRef = React.useRef(null); // Reference to the scroller element
+  const [start, setStart] = useState(false); // State to control animation start
 
   useEffect(() => {
-    addAnimation();
+    addAnimation(); // Add animation effect on component mount
   }, []);
 
+  // Function to duplicate items for infinite scrolling effect
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);
 
-      scrollerContent.forEach((item) => {
+      // Duplicate each item and append to the scroller
+      scrollerContent.forEach((item: HTMLElement) => {
         const duplicatedItem = item.cloneNode(true);
         if (scrollerRef.current) {
           scrollerRef.current.appendChild(duplicatedItem);
         }
       });
 
+      // Set animation direction and speed
       getDirection();
       getSpeed();
-      setStart(true);
+      setStart(true); // Start the animation
     }
   }
 
+  // Function to set animation direction based on props
   const getDirection = () => {
     if (containerRef.current) {
       if (direction === "left") {
@@ -49,6 +54,7 @@ export const InfiniteMovingCards = ({
     }
   };
 
+  // Function to set animation speed based on props
   const getSpeed = () => {
     if (containerRef.current) {
       if (speed === "fast") {
@@ -69,30 +75,21 @@ export const InfiniteMovingCards = ({
     const emptyStars = 5 - fullStars - (halfStar ? 1 : 0); // Number of empty stars
     for (let i = 0; i < fullStars; i++) {
       stars.push(
-        <span
-          key={i}
-          className="text-yellow-400 fill-current"
-        >
+        <span key={i} className="text-yellow-400 fill-current">
           &#9733; {/* Unicode star character */}
         </span>
       );
     }
     if (halfStar) {
       stars.push(
-        <span
-          key="half"
-          className="text-yellow-400 fill-current"
-        >
+        <span key="half" className="text-yellow-400 fill-current">
           &#9734; {/* Unicode half star character */}
         </span>
       );
     }
     for (let i = 0; i < emptyStars; i++) {
       stars.push(
-        <span
-          key={`empty-${i}`}
-          className="text-gray-300 fill-current"
-        >
+        <span key={`empty-${i}`} className="text-gray-300 fill-current">
           &#9734; {/* Unicode empty star character */}
         </span>
       );
@@ -104,6 +101,7 @@ export const InfiniteMovingCards = ({
     <div
       ref={containerRef}
       className={cn(
+        // Concatenate CSS classes using the utility function
         "scroller relative z-20 max-w-7xl overflow-hidden",
         className
       )}
@@ -115,9 +113,10 @@ export const InfiniteMovingCards = ({
       <ul
         ref={scrollerRef}
         className={cn(
+          // Concatenate CSS classes using the utility function
           "flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
-          start && "animate-scroll",
-          pauseOnHover && "hover:[animation-play-state:paused]"
+          start && "animate-scroll", // Start animation when 'start' state is true
+          pauseOnHover && "hover:[animation-play-state:paused]" // Pause animation on hover if enabled
         )}
       >
         {items.map((item, idx) => (
@@ -130,8 +129,8 @@ export const InfiniteMovingCards = ({
             key={item.name}
           >
             <img
-              src={item.image} // Add the image source here
-              alt={item.name} // Add alt text for accessibility
+              src={item.image} // Image source
+              alt={item.name} // Alt text for accessibility
               className="absolute top-0 left-0 w-full h-auto rounded-t-2xl"
             />
             <blockquote>
@@ -140,18 +139,18 @@ export const InfiniteMovingCards = ({
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
               <span className="relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
-                {item.quote}
+                {item.quote} {/* Quote content */}
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 <span className="flex flex-col gap-1">
                   <span className="text-sm leading-[1.6] text-gray-400 font-normal">
-                    {item.name}
+                    {item.name} {/* Name */}
                   </span>
                   <span className="text-sm leading-[1.6] text-gray-400 font-normal">
-                    {item.title}
+                    {item.title} {/* Title */}
                   </span>
                   <div className="flex items-center">
-                    {generateStarRating(item.rating)}
+                    {generateStarRating(item.rating)} {/* Star rating */}
                   </div>
                 </span>
               </div>

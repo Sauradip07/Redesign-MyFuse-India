@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { SpotlightPreview } from "./Spolight/page";
 import { CardHoverEffectDemo } from "./CardHoverEffect/page";
 import {InfiniteMovingCardsDemo} from "./infinite scroll/Page"
+
 export default function Home() {
    return (
       <div>
