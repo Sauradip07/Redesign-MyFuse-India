@@ -43,6 +43,9 @@ export default function Home() {
       <div>
         <InfiniteMovingCardsDemo />
       </div>
+      <div>
+
+      </div>
     </div>
   );
 }
