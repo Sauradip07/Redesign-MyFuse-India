@@ -75,30 +75,21 @@ export const InfiniteMovingCards = ({
     const emptyStars = 5 - fullStars - (halfStar ? 1 : 0); // Number of empty stars
     for (let i = 0; i < fullStars; i++) {
       stars.push(
-        <span
-          key={i}
-          className="text-yellow-400 fill-current"
-        >
+        <span key={i} className="text-yellow-400 fill-current">
           &#9733; {/* Unicode star character */}
         </span>
       );
     }
     if (halfStar) {
       stars.push(
-        <span
-          key="half"
-          className="text-yellow-400 fill-current"
-        >
+        <span key="half" className="text-yellow-400 fill-current">
           &#9734; {/* Unicode half star character */}
         </span>
       );
     }
     for (let i = 0; i < emptyStars; i++) {
       stars.push(
-        <span
-          key={`empty-${i}`}
-          className="text-gray-300 fill-current"
-        >
+        <span key={`empty-${i}`} className="text-gray-300 fill-current">
           &#9734; {/* Unicode empty star character */}
         </span>
       );
@@ -109,7 +100,8 @@ export const InfiniteMovingCards = ({
   return (
     <div
       ref={containerRef}
-      className={cn( // Concatenate CSS classes using the utility function
+      className={cn(
+        // Concatenate CSS classes using the utility function
         "scroller relative z-20 max-w-7xl overflow-hidden",
         className
       )}
@@ -120,7 +112,8 @@ export const InfiniteMovingCards = ({
     >
       <ul
         ref={scrollerRef}
-        className={cn( // Concatenate CSS classes using the utility function
+        className={cn(
+          // Concatenate CSS classes using the utility function
           "flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
           start && "animate-scroll", // Start animation when 'start' state is true
           pauseOnHover && "hover:[animation-play-state:paused]" // Pause animation on hover if enabled

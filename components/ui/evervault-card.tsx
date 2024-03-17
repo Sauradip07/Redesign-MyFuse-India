@@ -4,7 +4,7 @@
 import { useMotionValue } from "framer-motion"; // Hook for creating a motion value
 import React, { useState, useEffect } from "react"; // React hooks for managing component state and side effects
 import { useMotionTemplate, motion } from "framer-motion"; // Components and hooks for animations from framer-motion library
-import { cn } from '../../utils/cn'; // Utility function for generating CSS class names
+import { cn } from "../../utils/cn"; // Utility function for generating CSS class names
 
 // EvervaultCard component
 export const EvervaultCard = ({
@@ -75,7 +75,9 @@ export function CardPattern({ mouseX, mouseY, randomString }: any) {
   let style = { maskImage, WebkitMaskImage: maskImage }; // CSS style for masking effect
 
   return (
-    <div className="pointer-events-none"> {/* Container for patterns */}
+    <div className="pointer-events-none">
+      {" "}
+      {/* Container for patterns */}
       {/* Background with gradient */}
       <div className="absolute inset-0 rounded-2xl [mask-image:linear-gradient(white,transparent)] group-hover/card:opacity-50"></div>
       {/* Animated background */}
