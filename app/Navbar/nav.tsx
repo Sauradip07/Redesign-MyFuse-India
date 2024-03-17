@@ -58,7 +58,7 @@ export function NavbarDemo({ className }: { className?: string }): any {
                 active={active}
                 item="Sign&#160;In&#160;&#11167;"
               >
-                <div className="flex flex-col space-y-4 text-sm">
+                <div className="flex flex-col space-y-4 text-xs md:text-sm">
                   <HoveredLink href="https://www.myfuse.in/login-con/index.php">
                     Are you a Student?
                   </HoveredLink>
@@ -81,7 +81,7 @@ export function NavbarDemo({ className }: { className?: string }): any {
                 <div
                   id="dropdownDefaultButton"
                   data-dropdown-toggle="dropdown"
-                  className="flex flex-col space-y-4 text-sm"
+                  className="flex flex-col space-y-4 text-xs md:text-sm"
                 >
                   <HoveredLink href="/hobby">Education</HoveredLink>
                   <HoveredLink href="/individual">
