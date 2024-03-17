@@ -45,8 +45,8 @@ export default function Home() {
         <InfiniteMovingCardsDemo />
       </div>
       <div>
-<OnlineCV/>
-<StatsCounterSection/>
+{/* <OnlineCV/>
+<StatsCounterSection/> */}
       </div>
     </div>
   );
