@@ -42,7 +42,7 @@ export default function Home() {
 
          <div>
             <div className="pb-12">
-               <h1 className="mt-16 text-4xl md:text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+               <h1 className="mt-16 text-4xl md:text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 p-4">
                   {" "}
                   Top Categories{" "}
                </h1>
