@@ -71,15 +71,23 @@ export default function Home() {
             </div>
             <TripleMeteorsDemo />
          </div>
-         <div>
-            {/* <OnlineCV/>
-<StatsCounterSection/> */}
+         {/* online resume */}
+         <div className="lg:mt-40 md:mt-32">
+            <div className="pb-12">
+               <h1 className="mt-12 text-4xl md:text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+                  {" "}
+                  How It Works{" "}
+               </h1>
+            </div>
+            <div className="flex justify-center">
+               <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 justify-center gap-4 md:gap-6 lg:gap-16">
+                  <ThreeDCardDemo />
+                  <ThreeDCardDemo />
+                  <ThreeDCardDemo />
+               </div>
+            </div>
          </div>
-         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3">
-            <ThreeDCardDemo />
-            <ThreeDCardDemo />
-            <ThreeDCardDemo />
-         </div>
+
          {/* Button Added */}
          <div className="mt-16">
             <BackgroundBeamsDemo />
