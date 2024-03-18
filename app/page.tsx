@@ -9,6 +9,9 @@ import { InfiniteMovingCardsDemo } from "./infinite scroll/Page";
 import { TripleMeteorsDemo } from "./MeteorsCard/Page";
 import OnlineCV from "./onlineCv/Page";
 import StatsCounterSection from "./onlineCv/StatsCounterSection";
+import { MovingBorderDemo } from "./MovingBorder/page";
+import { BackgroundBeamsDemo } from "./BackgroundBeams/page";
+
 export default function Home() {
    return (
       <div>
@@ -32,6 +35,9 @@ export default function Home() {
             {/* <GlobeDemo /> */}
          </div>
          {/* Button Added */}
+         <div className="justify-center align-baseline text-center">
+            <MovingBorderDemo />
+         </div>
 
          <div>
             <div className="pb-12">
@@ -68,6 +74,9 @@ export default function Home() {
          <div>
             {/* <OnlineCV/>
 <StatsCounterSection/> */}
+         </div>
+         <div>
+            <BackgroundBeamsDemo />
          </div>
       </div>
    );
