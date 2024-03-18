@@ -22,8 +22,8 @@ export default function Home() {
          </div>
          {/* Sponcers All logo like Cursor or create running log design  */}
          <div className="Register Section pt-40 justify-center text-center">
-            <div className="pb-8">
-               <h1 className="mt-16 text-4xl md:text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+            <div className="p-6">
+               <h1 className="mt-16 text-4xl md:text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 p-4">
                   {" "}
                   Connecting talent to opportunity{" "}
                </h1>
