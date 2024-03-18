@@ -417,16 +417,8 @@ export function GlobeDemo() {
           {/* <h2 className="text-center text-xl md:text-4xl font-bold text-black dark:text-white">
             We sell soap worldwide
           </h2> */}
-          <h1 className="mb-4 text-center text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
-              Connecting Talent{" "}
-            </span>{" "}
-            to Opportunity
-          </h1>
-          <p className="text-center text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-4xl mt-2 mx-auto">
-            Embark on your career journey today! Explore our diverse job
-            listings, apply with confidence, and unlock your pathway to success
-          </p>
+          
+         
         </motion.div>
         <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
         <div className="absolute w-full -bottom-20 h-72 md:h-full z-10">
