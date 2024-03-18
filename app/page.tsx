@@ -52,7 +52,6 @@ export default function Home() {
             </div>
             <CardHoverEffectDemo />
          </div>
-         <div className="pt-40 pb-40"></div>
          {/* Button Added */}
          <div>
             {/* Data Change for the spolight */}
