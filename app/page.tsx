@@ -11,6 +11,7 @@ import OnlineCV from "./onlineCv/Page";
 import StatsCounterSection from "./onlineCv/StatsCounterSection";
 import { MovingBorderDemo } from "./MovingBorder/page";
 import { BackgroundBeamsDemo } from "./BackgroundBeams/page";
+import { ThreeDCardDemo } from "./3D-Crad/page";
 
 export default function Home() {
    return (
@@ -74,6 +75,12 @@ export default function Home() {
             {/* <OnlineCV/>
 <StatsCounterSection/> */}
          </div>
+         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3">
+            <ThreeDCardDemo />
+            <ThreeDCardDemo />
+            <ThreeDCardDemo />
+         </div>
+         {/* Button Added */}
          <div className="mt-16">
             <BackgroundBeamsDemo />
          </div>
