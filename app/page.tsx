@@ -75,7 +75,7 @@ export default function Home() {
             {/* <OnlineCV/>
 <StatsCounterSection/> */}
          </div>
-         <div>
+         <div className="mt-16">
             <BackgroundBeamsDemo />
          </div>
       </div>
