@@ -12,8 +12,34 @@ import StatsCounterSection from "./onlineCv/StatsCounterSection";
 import { MovingBorderDemo } from "./MovingBorder/page";
 import { BackgroundBeamsDemo } from "./BackgroundBeams/page";
 import { ThreeDCardDemo } from "./3D-Crad/page";
+
 import BlogCard from "./incraseauto/Page";
+import { useEffect, useState } from "react";
+import data_jobs from "./data/data.json";
+import JobList from "./RecentJob/page";
+
 export default function Home() {
+   const [jobs, setJobs] = useState([]);
+   const [filters, setFilters] = useState([]);
+
+   useEffect(() => setJobs(data_jobs));
+
+   const filterFunc = ({ role, level, tools, languages }) => {
+      if (filters.length === 0) {
+         return true;
+      }
+
+      const tags = [role, level];
+
+      return tags.some((tag) => filters.includes(tag));
+   };
+
+   const filteredJobs = jobs.filter(filterFunc);
+
+   const handleTagClick = () => {
+      console.log("click happened");
+   };
+
    return (
       <div>
          <div className="HeroSection">
@@ -54,6 +80,16 @@ export default function Home() {
             <CardHoverEffectDemo />
          </div>
          {/* Button Added */}
+
+         <div>
+            <div className="w-full min-h-screen">
+               <JobList
+                  filteredJobs={filteredJobs}
+                  handleTagClick={handleTagClick}
+               />
+            </div>
+         </div>
+         
          <div>
             {/* Data Change for the spolight */}
             <SpotlightPreview />
