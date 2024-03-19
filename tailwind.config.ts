@@ -15,6 +15,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary_bg: "hsl(180, 52%, 96%)",
+        primary_dark_cyan: "#5ba4a4",
+        dark_gray_cyan: "#7b8e8e",
+        filter_tablets: "#eef6f6",
+        light_grayish_cyan_filter_pill: "hsl(180,31%,95%)",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -25,9 +32,17 @@ const config: Config = {
         spotlight: "spotlight 2s ease .75s 1 forwards",
         scroll:
         "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
-        
+        shimmer: "shimmer 2s linear infinite",
       },
       keyframes: {
+        shimmer: {
+          from: {
+            backgroundPosition: "0 0",
+          },
+          to: {
+            backgroundPosition: "-200% 0",
+          },
+        },
         meteor: {
           "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
           "70%": { opacity: "1" },
