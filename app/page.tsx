@@ -133,9 +133,11 @@ export default function Home() {
 
 
          {/* Button Added */}
-         <div className="mt-16">
-            <BackgroundBeamsDemo />
-         </div>
+         <footer>
+            <div className="mt-16">
+               <BackgroundBeamsDemo />
+            </div>
+         </footer>
 
       </div>
    );
