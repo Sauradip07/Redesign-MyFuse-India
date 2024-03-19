@@ -17,6 +17,7 @@ import BlogCard from "./incraseauto/Page";
 import { useEffect, useState } from "react";
 import data_jobs from "./data/data.json";
 import JobList from "./RecentJob/page";
+import {StickyScrollRevealDemo} from "./StickyScroll/Page";
 
 export default function Home() {
    const [jobs, setJobs] = useState([]);
@@ -65,7 +66,9 @@ export default function Home() {
          <div className="justify-center align-baseline text-center">
             <MovingBorderDemo />
          </div>
-
+         <div>
+            <StickyScrollRevealDemo/>
+         </div>
          <div>
             <div className="pb-12">
                <h1 className="mt-16 text-4xl md:text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 p-4">
@@ -123,14 +126,16 @@ export default function Home() {
                </div>
             </div>
          </div>
+         <div>
+            <BlogCard/>
+         </div>
+
 
          {/* Button Added */}
          <div className="mt-16">
             <BackgroundBeamsDemo />
          </div>
-         <div>
-            <BlogCard/>
-         </div>
+
       </div>
    );
 }
