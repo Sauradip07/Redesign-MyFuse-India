@@ -12,7 +12,7 @@ import StatsCounterSection from "./onlineCv/StatsCounterSection";
 import { MovingBorderDemo } from "./MovingBorder/page";
 import { BackgroundBeamsDemo } from "./BackgroundBeams/page";
 import { ThreeDCardDemo } from "./3D-Crad/page";
-
+import BlogCard from "./incraseauto/Page";
 export default function Home() {
    return (
       <div>
@@ -91,6 +91,9 @@ export default function Home() {
          {/* Button Added */}
          <div className="mt-16">
             <BackgroundBeamsDemo />
+         </div>
+         <div>
+            <BlogCard/>
          </div>
       </div>
    );
