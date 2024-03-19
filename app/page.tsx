@@ -110,6 +110,9 @@ export default function Home() {
             </div>
             <TripleMeteorsDemo />
          </div>
+         <div>
+            <BlogCard/>
+         </div>
          {/* online resume */}
          <div className="lg:mt-40 md:mt-32">
             <div className="pb-12">
@@ -126,9 +129,7 @@ export default function Home() {
                </div>
             </div>
          </div>
-         <div>
-            <BlogCard/>
-         </div>
+
 
 
          {/* Button Added */}
