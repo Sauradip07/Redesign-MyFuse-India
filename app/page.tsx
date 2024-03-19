@@ -19,6 +19,7 @@ import data_jobs from "./data/data.json";
 import JobList from "./RecentJob/page";
 import { StickyScrollRevealDemo } from "./StickyScroll/Page";
 import { EvervaultCardDemo } from "./Hover/Page";
+import { LampDemo } from "./LampEffect/page";
 
 export default function Home() {
    const [jobs, setJobs] = useState([]);
@@ -67,10 +68,17 @@ export default function Home() {
          <div className="justify-center align-baseline text-center">
             <MovingBorderDemo />
          </div>
+         <div>
+          <LampDemo />
+            <div className="justify-center align-baseline text-center">
+               <MovingBorderDemo />
+            </div>
+         </div>
 
          <div>
             <StickyScrollRevealDemo />
          </div>
+
          <div>
             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 justify-center gap-4 md:gap-6 lg:gap-16 px-20">
                <EvervaultCardDemo />
