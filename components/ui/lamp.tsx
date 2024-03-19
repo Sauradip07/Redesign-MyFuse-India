@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/utils/cn";
+import { MovingBorderDemo } from "@/app/MovingBorder/page";
 
 export function LampDemo() {
    return (
@@ -92,9 +93,10 @@ export const LampContainer = ({
 
          <div className="relative z-50 flex -translate-y-80 flex-col items-center px-5">
             {children}
-            
+            <button className="inline-flex px-8 py-6 h-12 mt-14 animate-shimmer items-center justify-center rounded-md border border-slate-600 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] font-medium text-slate-300 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-300 focus:ring-offset-2 focus:ring-offset-slate-50">
+               Create Now
+            </button>
          </div>
-
       </div>
    );
 };
