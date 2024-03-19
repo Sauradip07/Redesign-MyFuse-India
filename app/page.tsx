@@ -17,7 +17,8 @@ import BlogCard from "./incraseauto/Page";
 import { useEffect, useState } from "react";
 import data_jobs from "./data/data.json";
 import JobList from "./RecentJob/page";
-import {StickyScrollRevealDemo} from "./StickyScroll/Page";
+import { StickyScrollRevealDemo } from "./StickyScroll/Page";
+import { EvervaultCardDemo } from "./Hover/Page";
 
 export default function Home() {
    const [jobs, setJobs] = useState([]);
@@ -66,9 +67,19 @@ export default function Home() {
          <div className="justify-center align-baseline text-center">
             <MovingBorderDemo />
          </div>
+
          <div>
-            <StickyScrollRevealDemo/>
+            <StickyScrollRevealDemo />
          </div>
+         <div>
+            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 justify-center gap-4 md:gap-6 lg:gap-16 px-20">
+               <EvervaultCardDemo />
+               <EvervaultCardDemo />
+               <EvervaultCardDemo />
+               <EvervaultCardDemo />
+            </div>
+         </div>
+
          <div>
             <div className="pb-12">
                <h1 className="mt-16 text-4xl md:text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 p-4">
@@ -92,7 +103,7 @@ export default function Home() {
                />
             </div>
          </div>
-         
+
          <div>
             {/* Data Change for the spolight */}
             <SpotlightPreview />
@@ -111,7 +122,7 @@ export default function Home() {
             <TripleMeteorsDemo />
          </div>
          <div>
-            <BlogCard/>
+            <BlogCard />
          </div>
          {/* online resume */}
          <div className="lg:mt-40 md:mt-32">
@@ -130,15 +141,12 @@ export default function Home() {
             </div>
          </div>
 
-
-
          {/* Button Added */}
          <footer>
             <div className="mt-16">
                <BackgroundBeamsDemo />
             </div>
          </footer>
-
       </div>
    );
 }
