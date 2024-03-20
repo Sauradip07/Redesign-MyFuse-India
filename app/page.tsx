@@ -116,7 +116,7 @@ export default function Home() {
                   {" "}
                   Top Categories{" "}
                </h1>
-               <p className="mt-4 font-normal text-base md:text-lg text-neutral-300 max-w-5xl text-center mx-auto">
+               <p className="mt-4 font-normal px-4 text-base md:text-lg text-neutral-300 max-w-5xl text-center mx-auto">
                   High-demand job categories feature software development,
                   nursing, and digital marketing roles
                </p>
@@ -131,7 +131,7 @@ export default function Home() {
                   {" "}
                   Recent Jobs{" "}
                </h1>
-               <p className="mt-4 font-normal text-base md:text-lg text-neutral-300 max-w-5xl text-center mx-auto">
+               <p className="mt-4 px-4 font-normal text-base md:text-lg text-neutral-300 max-w-5xl text-center mx-auto">
                   Recent job trends highlight positions in data analysis,
                   telemedicine, and remote project management
                </p>
@@ -155,7 +155,7 @@ export default function Home() {
                   {" "}
                   What Graduates Say About Myfuse{" "}
                </h1>
-               <p className="mt-4 font-normal text-base md:text-lg text-neutral-300 max-w-5xl text-center mx-auto">
+               <p className="mt-4 p-4 font-normal text-base md:text-lg text-neutral-300 max-w-5xl text-center mx-auto">
                   Discover what our satisfied customers have to say about their
                   experiences with our products and services. Read these
                   testimonials to gain insights into the positive impact we've
