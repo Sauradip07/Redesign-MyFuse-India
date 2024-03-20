@@ -73,7 +73,7 @@ export default function Home() {
                   </h1>
                   <p className="text-center text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-4xl mt-2 mx-auto">
                      Elevate your skills and embrace growth with our Regular
-                     Challenge – a daily journey to unlock your full potential.
+                     Challenge – a daily journey to unlock your full potential
                   </p>
                </div>
                {/* <GlobeDemo /> */}
@@ -110,7 +110,7 @@ export default function Home() {
             </div>
          </div>
 
-         <div>
+         <div className="mt-44">
             <div className="pb-12">
                <h1 className="mt-16 text-4xl md:text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 p-4">
                   {" "}
@@ -125,15 +125,15 @@ export default function Home() {
          </div>
          {/* Button Added */}
 
-         <div>
+         <div className="mt-44">
             <div className="pb-12 mb-10">
                <h1 className="mt-16 text-4xl md:text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
                   {" "}
-                  Recent Job{" "}
+                  Recent Jobs{" "}
                </h1>
                <p className="mt-4 font-normal text-base md:text-lg text-neutral-300 max-w-5xl text-center mx-auto">
                   Recent job trends highlight positions in data analysis,
-                  telemedicine, and remote project management.
+                  telemedicine, and remote project management
                </p>
             </div>
             <div className="w-full min-h-screen">
@@ -171,7 +171,7 @@ export default function Home() {
                   How It Works{" "}
                </h1>
                <p className="mt-4 font-normal text-base md:text-lg text-neutral-300 max-w-5xl text-center mx-auto">
-                  Launch your dream career with these essential steps.
+                  Launch your dream career with these essential steps
                </p>
             </div>
             <TripleMeteorsDemo />
