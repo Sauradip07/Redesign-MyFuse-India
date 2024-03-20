@@ -31,7 +31,7 @@ const JobCard = ({
    }
 
    return (
-      <div className="flex flex-col justify-between bg-black shadow-md my-5 mx-10 p-6 rounded-md border border-gray-800 border-solid sm:flex-row">
+      <div className="flex flex-col justify-between bg-black shadow-md my-5 mx-10 p-6 rounded-md border border-gray-800 border-solid sm:flex-row hover:scale-105 transition duration-250 ease-out hover:ease-in">
          {/* company logo */}
          <img
             src={logo}

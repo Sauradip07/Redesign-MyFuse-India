@@ -66,14 +66,15 @@ export default function Home() {
 
             <div className="Register Section pt-40 justify-center text-center">
                <div className="p-6">
-                     <h1 className="mt-16 text-4xl md:text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 p-4">
-                        {" "}
-                        Regular Challenges{" "}
-                     </h1>
-                     <p className="text-center text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-4xl mt-2 mx-auto">
-                        Elevate your skills and embrace growth with our Regular Challenge – a daily journey to unlock your full potential.
-                     </p>
-                  </div>
+                  <h1 className="mt-16 text-4xl md:text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 p-4">
+                     {" "}
+                     Regular Challenges{" "}
+                  </h1>
+                  <p className="text-center text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-4xl mt-2 mx-auto">
+                     Elevate your skills and embrace growth with our Regular
+                     Challenge – a daily journey to unlock your full potential.
+                  </p>
+               </div>
                {/* <GlobeDemo /> */}
             </div>
 
@@ -114,7 +115,7 @@ export default function Home() {
                   {" "}
                   Top Categories{" "}
                </h1>
-               <p className="mt-4 font-normal text-base text-neutral-300 max-w-5xl text-center mx-auto">
+               <p className="mt-4 font-normal text-base md:text-lg text-neutral-300 max-w-5xl text-center mx-auto">
                   High-demand job categories feature software development,
                   nursing, and digital marketing roles
                </p>
@@ -124,6 +125,16 @@ export default function Home() {
          {/* Button Added */}
 
          <div>
+            <div className="pb-12 mb-10">
+               <h1 className="mt-16 text-4xl md:text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+                  {" "}
+                  Recent Job{" "}
+               </h1>
+               <p className="mt-4 font-normal text-base md:text-lg text-neutral-300 max-w-5xl text-center mx-auto">
+                  Recent job trends highlight positions in data analysis,
+                  telemedicine, and remote project management.
+               </p>
+            </div>
             <div className="w-full min-h-screen">
                <JobList
                   filteredJobs={filteredJobs}
@@ -132,12 +143,21 @@ export default function Home() {
             </div>
          </div>
 
-         <div>
+         <div className="mt-24">
             {/* Data Change for the spolight */}
             <SpotlightPreview />
          </div>
          {/* Button Added */}
          <div>
+            <div className="">
+               <h1 className="mt-16 text-4xl md:text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+                  {" "}
+                  How It Works{" "}
+               </h1>
+               <p className="mt-4 font-normal text-base md:text-lg text-neutral-300 max-w-5xl text-center mx-auto">
+                  Launch your dream career with these essential steps.
+               </p>
+            </div>
             <InfiniteMovingCardsDemo />
          </div>
          <div>
@@ -146,6 +166,9 @@ export default function Home() {
                   {" "}
                   How It Works{" "}
                </h1>
+               <p className="mt-4 font-normal text-base md:text-lg text-neutral-300 max-w-5xl text-center mx-auto">
+                  Launch your dream career with these essential steps.
+               </p>
             </div>
             <TripleMeteorsDemo />
          </div>
@@ -157,7 +180,7 @@ export default function Home() {
             <div className="pb-12">
                <h1 className="mt-12 text-4xl md:text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
                   {" "}
-                  How It Works{" "}
+                  Recent Blogs{" "}
                </h1>
             </div>
             <div className="flex justify-center">
