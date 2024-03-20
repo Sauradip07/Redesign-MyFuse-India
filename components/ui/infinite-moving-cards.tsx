@@ -23,7 +23,7 @@ export const InfiniteMovingCards = ({
          const scrollerContent = Array.from(scrollerRef.current.children);
 
          // Duplicate each item and append to the scroller
-         scrollerContent.forEach((item: HTMLElement) => {
+         scrollerContent.forEach((item) => {
             const duplicatedItem = item.cloneNode(true);
             if (scrollerRef.current) {
                scrollerRef.current.appendChild(duplicatedItem);
@@ -128,17 +128,17 @@ export const InfiniteMovingCards = ({
             )}>
             {items.map((item, idx) => (
                <li
-                  className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
+                  className="w-[350px] max-w-full relative rounded-2xl border   flex-shrink-0  px-8 py-6 md:w-[450px] hover:scale-105 transition duration-250 ease-out hover:ease-in"
                   style={{
                      background:
-                        "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
+                        "bg-slate-400",
                   }}
                   key={item.name}>
-                  <img
+                  {/* <img
                      src={item.image} // Image source
                      alt={item.name} // Alt text for accessibility
                      className="absolute top-0 left-0 w-full h-auto rounded-t-2xl"
-                  />
+                  /> */}
                   <blockquote>
                      <div
                         aria-hidden="true"
