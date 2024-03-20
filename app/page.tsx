@@ -29,9 +29,10 @@ import { RiContactsBook2Fill } from "react-icons/ri";
 import { LuCalendarCheck } from "react-icons/lu";
 import { GrBraille } from "react-icons/gr";
 import Image from "next/image";
-import zepto from '../public/zepto.jpg';
-import zerodha from '../public/zerodha.png';
-import fuse from '../public/fuse2.webp';
+import zepto from "../public/zepto.jpg";
+import zerodha from "../public/zerodha.png";
+import fuse from "../public/fuse2.webp";
+import fuse2 from "../public/fuse.png";
 
 export default function Home() {
    const [jobs, setJobs] = useState([]);
@@ -263,7 +264,7 @@ export default function Home() {
          {/* Button Added */}
          <footer>
             <div className="mt-16">
-               <BackgroundBeamsDemo />
+               <BackgroundBeamsDemo imageValue={fuse2} />
             </div>
          </footer>
       </div>
