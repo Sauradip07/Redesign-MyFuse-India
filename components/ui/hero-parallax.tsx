@@ -1,4 +1,6 @@
 // Import necessary modules and components from React, Framer Motion, Next.js, and Image.
+'use client';
+
 import React from "react";
 import {
   motion,

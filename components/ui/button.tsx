@@ -1,3 +1,5 @@
+'use client';
+
 // Import necessary dependencies and utilities
 import * as React from "react";
 import { Slot } from "@radix-ui/react-slot"; // Importing a component for flexible rendering

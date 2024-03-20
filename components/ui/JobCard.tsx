@@ -1,3 +1,4 @@
+'use client';
 import { SiAdobe } from "react-icons/si";
 
 const JobCard = ({

@@ -1,3 +1,4 @@
+'use client';
 import React, { useEffect, useState } from "react";
 import { cn } from "@/utils/cn"; // Importing a utility function for classnames concatenation
 

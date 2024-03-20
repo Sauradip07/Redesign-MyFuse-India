@@ -1,3 +1,4 @@
+'use client';
 import JobCard from "../../components/ui/JobCard";
 import { SiAdobe } from "react-icons/si";
 const JobList = ({

@@ -1,5 +1,5 @@
 // components/StatsCounterSection.jsx
-
+'use client';
 import React from "react";
 
 const StatsCounterSection = () => {
