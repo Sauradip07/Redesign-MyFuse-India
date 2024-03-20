@@ -1,3 +1,5 @@
+import { SiAdobe } from "react-icons/si";
+
 const JobCard = ({
    job,
    handleTagClick,
@@ -22,7 +24,7 @@ const JobCard = ({
       tools,
    } = job;
 
-   //const {icon} = icons;
+   const icon = icons;
 
    const tags = [role, level];
 
@@ -37,11 +39,7 @@ const JobCard = ({
    return (
       <div className="flex flex-col justify-between bg-black shadow-md my-5 mx-10 p-6 rounded-md border border-gray-800 border-solid sm:flex-row hover:scale-105 transition duration-250 ease-out hover:ease-in">
          {/* company logo */}
-         <img
-            src={logo}
-            alt="logo"
-            className="-mt-11mb-4 w-20 h-20 sm:mt-0 sm:h-24 sm:my-0"
-         />
+         <SiAdobe className="h-20 w-auto" />
 
          <div className="flex-flex-col-justify-between ml-4">
             {/* company name */}

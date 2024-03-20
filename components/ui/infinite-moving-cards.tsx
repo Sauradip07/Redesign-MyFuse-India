@@ -7,7 +7,8 @@ export const InfiniteMovingCards = ({
    direction = "left", // Direction of animation (default: left)
    speed = "fast", // Speed of animation (default: fast)
    pauseOnHover = true, // Whether to pause animation on hover (default: true)
-   className, // Additional CSS classes
+   className,
+    // Additional CSS classes
 }) => {
    const containerRef = React.useRef(null); // Reference to the container element
    const scrollerRef = React.useRef(null); // Reference to the scroller element

@@ -3,6 +3,7 @@
 import React from "react";
 import { InfiniteMovingCards } from "../../components/ui/infinite-moving-cards";
 
+
 export function InfiniteMovingCardsDemo() {
    const testimonials = [
       {
@@ -38,7 +39,7 @@ export function InfiniteMovingCardsDemo() {
          name: "Herman Melville",
          title: "Moby-Dick",
          rating: 2.5, // Add rating property for each testimonial
-         image: "/herman_melville.jpg", // Add image source for each testimonial
+         image: "", // Add image source for each testimonial
       },
    ];
 
@@ -48,7 +49,7 @@ export function InfiniteMovingCardsDemo() {
             items={testimonials}
             direction="right"
             speed="slow"
-            className="infinite-moving-cards" // Add className property
+            className="infinite-moving-cards"// Add className property
          />
          {/* Assuming StarRating component is correctly implemented */}
       </div>
