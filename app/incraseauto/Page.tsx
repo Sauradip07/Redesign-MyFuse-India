@@ -1,20 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import CountUp from 'react-countup';
 import Counter from '../../components/ui/autoincrase'; 
 
 const BlogCard = () => {
     const [counted, setCounted] = useState(false);
 
-    const handleHover = () => {
-        if (!counted) {
-            setCounted(true);
-        }
-    };
+    useEffect(() => {
+        const handleScroll = () => {
+            const windowHeight = window.innerHeight;
+            const blogCard = document.getElementById('blog-card');
+            if (blogCard) {
+                const { top } = blogCard.getBoundingClientRect();
+                if (top < windowHeight && !counted) {
+                    setCounted(true);
+                }
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [counted]);
 
     return (
         <div 
-            className="w-auto flex justify-center py-4 px-2" 
-            onMouseEnter={handleHover}
+            id="blog-card"
+            className="w-auto flex justify-center py-4 px-2"
         >
             <a href="#" className="flex flex-col items-center rounded-lg shadow md:flex-row md:max-w-xl  dark:bg-black ">
                 <img className="object-cover min-w-80 w-auto rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="" alt="jqfljabjbv" />
