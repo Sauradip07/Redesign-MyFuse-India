@@ -24,7 +24,7 @@ export function InfiniteMovingCardsDemo() {
          quote: "All that we see or seem is but a dream within a dream.",
          name: "Edgar Allan Poe",
          title: "A Dream Within a Dream",
-         rating: 3, // Add rating property for each testimonial
+         rating: 4.2, // Add rating property for each testimonial
          image: "/edgar_allan_poe.jpg", // Add image source for each testimonial
       },
       {
@@ -38,7 +38,7 @@ export function InfiniteMovingCardsDemo() {
          quote: "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
          name: "Herman Melville",
          title: "Moby-Dick",
-         rating: 2.5, // Add rating property for each testimonial
+         rating: 4.5, // Add rating property for each testimonial
          image: "", // Add image source for each testimonial
       },
    ];
