@@ -104,10 +104,27 @@ export default function Home() {
 
          <div className="mt-20">
             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 justify-center align-middle gap-4 md:gap-6 lg:gap-16 px-4 md:px-20">
-               <EvervaultCardDemo />
-               <EvervaultCardDemo />
-               <EvervaultCardDemo />
-               <EvervaultCardDemo />
+               <EvervaultCardDemo
+                  title={"Right Job For You"}
+                  description={
+                     "Myfuse's comprehensive platform is designed to help you discover the right job for you."
+                  }
+               />
+               <EvervaultCardDemo
+                  title={"One to One Coverstatiion With HR's"}
+                  description={
+                     "MyFuse offers the unique advantage of one-to-one conversations with HR professionals"
+                  }
+               />
+               <EvervaultCardDemo
+                  title={"No Work Experiance required"}
+                  description={
+                     "Myfuse welcomes applicants with no work experience, providing valuable opportunities and resources"
+                  }
+               />
+               <EvervaultCardDemo 
+               title={"Easy To Apply"} 
+               description={"Myfuse's straightforward application process is designed to be easy to apply"} />
             </div>
          </div>
 
@@ -198,9 +215,27 @@ export default function Home() {
             </div>
             <div className="flex justify-center">
                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 justify-center gap-4 md:gap-6 lg:gap-16">
-                  <ThreeDCardDemo />
-                  <ThreeDCardDemo />
-                  <ThreeDCardDemo />
+                  <ThreeDCardDemo
+                     title={"Zerodha"}
+                     description={
+                        "Discount stock broker for online trading in India "
+                     }
+                     techId={"Finance"}
+                  />
+                  <ThreeDCardDemo
+                     title={"Myfuse.In"}
+                     description={
+                        "Job platform connecting candidates directly with employers"
+                     }
+                     techId={"Technology"}
+                  />
+                  <ThreeDCardDemo
+                     title={"Zepto"}
+                     description={
+                        "India's super-fast grocery delivery app (10-minute deliveries)"
+                     }
+                     techId={"E-Commerce"}
+                  />
                </div>
             </div>
          </div>
