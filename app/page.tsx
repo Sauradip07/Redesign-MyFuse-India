@@ -48,7 +48,7 @@ export default function Home() {
    };
 
    return (
-      <div>
+      <div className="bg-black text-white">
          <div className="HeroSection">
             {/* Span Button icon logo */}
             {/* <HeroParallaxDemo /> */}
