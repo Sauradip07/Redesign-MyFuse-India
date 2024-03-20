@@ -28,6 +28,10 @@ import { MdComputer } from "react-icons/md";
 import { RiContactsBook2Fill } from "react-icons/ri";
 import { LuCalendarCheck } from "react-icons/lu";
 import { GrBraille } from "react-icons/gr";
+import Image from "next/image";
+import zepto from '../public/zepto.jpg';
+import zerodha from '../public/zerodha.png';
+import fuse from '../public/fuse2.webp';
 
 export default function Home() {
    const [jobs, setJobs] = useState([]);
@@ -234,6 +238,7 @@ export default function Home() {
                         "Discount stock broker for online trading in India "
                      }
                      techId={"Finance"}
+                     imageValue={zerodha}
                   />
                   <ThreeDCardDemo
                      title={"Myfuse.In"}
@@ -241,6 +246,7 @@ export default function Home() {
                         "Job platform connecting candidates directly with employers"
                      }
                      techId={"Technology"}
+                     imageValue={fuse}
                   />
                   <ThreeDCardDemo
                      title={"Zepto"}
@@ -248,6 +254,7 @@ export default function Home() {
                         "India's super-fast grocery delivery app (10-minute deliveries)"
                      }
                      techId={"E-Commerce"}
+                     imageValue={zepto}
                   />
                </div>
             </div>
