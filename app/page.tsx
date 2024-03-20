@@ -153,10 +153,10 @@ export default function Home() {
             <div className="">
                <h1 className="mt-16 text-4xl md:text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
                   {" "}
-                  How It Works{" "}
+                  What Graduates Say About Myfuse{" "}
                </h1>
                <p className="mt-4 font-normal text-base md:text-lg text-neutral-300 max-w-5xl text-center mx-auto">
-                  Launch your dream career with these essential steps.
+               Discover what our satisfied customers have to say about their experiences with our products and services. Read these testimonials to gain insights into the positive impact we've had on their lives
                </p>
             </div>
             <InfiniteMovingCardsDemo />
