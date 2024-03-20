@@ -58,7 +58,7 @@ export default function Home() {
          <div>
             <CompanyDemo />
          </div>
-         <TracingBeam className="px-6">
+         <TracingBeam className="px-8 md:px-6">
             {/* Button Added */}
 
             <div className="max-h-[690px]">
@@ -89,7 +89,7 @@ export default function Home() {
                   {" "}
                   Connecting talent to opportunity{" "}
                </h1>
-               <p className="text-center text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-4xl mt-2 mx-auto">
+               <p className="text-center text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-4xl mt-6 mx-auto">
                   Embark on your career journey today! Explore our diverse job
                   listings, apply with confidence, and unlock your pathway to
                   success
@@ -97,11 +97,11 @@ export default function Home() {
             </div>
             {/* <GlobeDemo /> */}
          </div>
-         <div className="justify-center align-baseline text-center">
+         <div className="justify-center align-baseline text-center mt-6">
             <MovingBorderDemo />
          </div>
 
-         <div className="mt-14">
+         <div className="mt-20">
             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 justify-center align-middle gap-4 md:gap-6 lg:gap-16 px-4 md:px-20">
                <EvervaultCardDemo />
                <EvervaultCardDemo />
@@ -156,7 +156,10 @@ export default function Home() {
                   What Graduates Say About Myfuse{" "}
                </h1>
                <p className="mt-4 font-normal text-base md:text-lg text-neutral-300 max-w-5xl text-center mx-auto">
-               Discover what our satisfied customers have to say about their experiences with our products and services. Read these testimonials to gain insights into the positive impact we've had on their lives
+                  Discover what our satisfied customers have to say about their
+                  experiences with our products and services. Read these
+                  testimonials to gain insights into the positive impact we've
+                  had on their lives
                </p>
             </div>
             <InfiniteMovingCardsDemo />
@@ -182,7 +185,7 @@ export default function Home() {
          {/* online resume */}
          <div className="lg:mt-40 md:mt-32">
             <div className="pb-12">
-               <h1 className="mt-12 text-4xl md:text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+               <h1 className="mt-12 py-4 text-4xl md:text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
                   {" "}
                   Recent Blogs{" "}
                </h1>
