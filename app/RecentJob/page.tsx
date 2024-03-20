@@ -1,5 +1,5 @@
 import JobCard from "../../components/ui/JobCard";
-
+import { SiAdobe } from "react-icons/si";
 const JobList = ({
    handleTagClick,
    filteredJobs,
@@ -11,7 +11,7 @@ const JobList = ({
       <div className="max-w-7xl mx-auto">
          <div className="flex flex-col">
             {filteredJobs.map((job) => (
-               <JobCard job={job} handleTagClick={handleTagClick} />
+               <JobCard job={job} icons={<SiAdobe />} handleTagClick={handleTagClick} />
             ))}
          </div>
       </div>

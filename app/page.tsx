@@ -121,9 +121,12 @@ export default function Home() {
                      "Myfuse welcomes applicants with no work experience, providing valuable opportunities and resources"
                   }
                />
-               <EvervaultCardDemo 
-               title={"Easy To Apply"} 
-               description={"Myfuse's straightforward application process is designed to be easy to apply"} />
+               <EvervaultCardDemo
+                  title={"Easy To Apply"}
+                  description={
+                     "Myfuse's straightforward application process is designed to be easy to apply"
+                  }
+               />
             </div>
          </div>
 
@@ -193,9 +196,11 @@ export default function Home() {
             </div>
             <TripleMeteorsDemo />
          </div>
-         <div className="mt-20">
-            <BlogCard />
-            <div className="mt-10">
+         <div className="mt-20 flex flex-col">
+            <div>
+               <BlogCard />
+            </div>
+            <div className="p-4 mt-10 max-w-auto justify-center text-center align-middle ">
                <AnimatedTooltipPreview />
             </div>
          </div>

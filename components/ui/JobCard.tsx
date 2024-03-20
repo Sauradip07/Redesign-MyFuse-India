@@ -1,9 +1,11 @@
 const JobCard = ({
    job,
    handleTagClick,
+   icons,
 }: {
    job: any;
    handleTagClick: any;
+   icons: any;
 }): JSX.Element => {
    const {
       company,
@@ -19,6 +21,8 @@ const JobCard = ({
       languages,
       tools,
    } = job;
+
+   //const {icon} = icons;
 
    const tags = [role, level];
 
