@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/utils/cn";
-import { MovingBorderDemo } from "@/app/MovingBorder/page";
+import { MovingBorderDemo } from "@/components/MovingBorder/page";
 
 export function LampDemo() {
    return (
