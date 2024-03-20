@@ -24,7 +24,7 @@ import CompanyDemo from "./CompanyCard/page";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import { AuroraBackgroundDemo } from "./Hero/page";
 import { AnimatedTooltipPreview } from "./Devlopers/page";
-
+import PreLoader from "./loader/PreLoader";
 export default function Home() {
    const [jobs, setJobs] = useState([]);
    const [filters, setFilters] = useState([]);
@@ -49,6 +49,7 @@ export default function Home() {
 
    return (
       <div>
+         <PreLoader />
          <div className="HeroSection">
             {/* Span Button icon logo */}
             {/* <HeroParallaxDemo /> */}
