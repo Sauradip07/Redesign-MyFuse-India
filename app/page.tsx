@@ -21,6 +21,7 @@ import { StickyScrollRevealDemo } from "./StickyScroll/Page";
 import { EvervaultCardDemo } from "./Hover/Page";
 import { LampDemo } from "./LampEffect/page";
 import CompanyDemo from "./CompanyCard/page";
+import { TracingBeam } from "@/components/ui/tracing-beam";
 
 export default function Home() {
    const [jobs, setJobs] = useState([]);
@@ -53,36 +54,35 @@ export default function Home() {
          {/* Sponcers All logo like Cursor or create running log design  */}
          <div>
             <CompanyDemo />
-
          </div>
-         
-         <div className="Register Section pt-40 justify-center text-center">
-            <div className="p-6">
-               <h1 className="mt-16 text-4xl md:text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 p-4">
-                  {" "}
-                  Connecting talent to opportunity{" "}
-               </h1>
-               <p className="text-center text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-4xl mt-2 mx-auto">
-                  Embark on your career journey today! Explore our diverse job
-                  listings, apply with confidence, and unlock your pathway to
-                  success
-               </p>
+         <TracingBeam className="px-6">
+            <div className="Register Section pt-40 justify-center text-center">
+               <div className="p-6">
+                  <h1 className="mt-16 text-4xl md:text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 p-4">
+                     {" "}
+                     Connecting talent to opportunity{" "}
+                  </h1>
+                  <p className="text-center text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-4xl mt-2 mx-auto">
+                     Embark on your career journey today! Explore our diverse
+                     job listings, apply with confidence, and unlock your
+                     pathway to success
+                  </p>
+               </div>
+               {/* <GlobeDemo /> */}
             </div>
-            {/* <GlobeDemo /> */}
-         </div>
-         {/* Button Added */}
-         <div className="justify-center align-baseline text-center">
-            <MovingBorderDemo />
-         </div>
+            {/* Button Added */}
+            <div className="justify-center align-baseline text-center">
+               <MovingBorderDemo />
+            </div>
 
-         <div className="max-h-[690px]">
-            <LampDemo />
-         </div>
+            <div className="max-h-[690px]">
+               <LampDemo />
+            </div>
 
-         <div>
-            <StickyScrollRevealDemo />
-         </div>
-
+            <div>
+               <StickyScrollRevealDemo />
+            </div>
+         </TracingBeam>
          <div>
             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 justify-center align-middle gap-4 md:gap-6 lg:gap-16 px-4 md:px-20">
                <EvervaultCardDemo />
