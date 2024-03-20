@@ -37,7 +37,8 @@ const BlogCard = () => {
                   src={Student}
 
                   alt={"student image"}
-                  className="object-cover items-center  min-w-80 w-auto rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                  className="object-cover items-center  min-w-80 w-auto rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg
+                  hover:scale-105 transition duration-250 ease-out hover:ease-in"
                />
             </div>
             <div className="flex flex-col justify-start p-4 w-auto leading-normal  items-center text-start ">

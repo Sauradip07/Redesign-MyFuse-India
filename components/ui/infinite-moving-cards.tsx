@@ -24,7 +24,7 @@ export const InfiniteMovingCards = ({
          const scrollerContent = Array.from(scrollerRef.current.children);
 
          // Duplicate each item and append to the scroller
-         scrollerContent.forEach((item) => {
+         scrollerContent.forEach((item: HTMLElement) => {
             const duplicatedItem = item.cloneNode(true);
             if (scrollerRef.current) {
                scrollerRef.current.appendChild(duplicatedItem);
