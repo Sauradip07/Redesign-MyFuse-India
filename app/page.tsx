@@ -189,6 +189,11 @@ export default function Home() {
                   {" "}
                   Recent Blogs{" "}
                </h1>
+               <p className="mt-4 font-normal text-base md:text-lg text-neutral-300 max-w-5xl text-center mx-auto">
+                  Stay up-to-date with our latest insights and updates in our
+                  Recent Blog. Explore our most recent articles and posts to
+                  gain valuable knowledge on various topics.
+               </p>
             </div>
             <div className="flex justify-center">
                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 justify-center gap-4 md:gap-6 lg:gap-16">

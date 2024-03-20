@@ -1,7 +1,7 @@
 import React from "react";
 import { Meteors } from "../../components/ui/meteors";
 
-export function MeteorsDemo() {
+export function MeteorsDemo(props) {
    return (
       <div className="flex items-center justify-evenly">
          <div className="w-full relative max-w-sm px-8 py-4 min-w-64">
@@ -24,13 +24,11 @@ export function MeteorsDemo() {
                </div>
 
                <h1 className="font-bold text-xl text-white mb-4 relative z-50">
-                  Meteors because they&apos;re cool
+                  {props.titile}
                </h1>
 
                <p className="font-normal text-base text-slate-500 mb-4 relative z-50">
-                  I don&apos;t know what to write so I&apos;ll just paste
-                  something cool here. One more sentence because lorem ipsum is
-                  just unacceptable. Won&apos;t ChatGPT the shit out of this.
+                  {props.description}
                </p>
 
                <button className="border px-4 py-1 rounded-lg border-gray-500 text-gray-300">
@@ -49,9 +47,24 @@ export function MeteorsDemo() {
 export function TripleMeteorsDemo() {
    return (
       <div className="grid grid-cols-1  md:grid-cols-1 lg:grid-cols-3 content-center items-center place-content-center lg:px-60">
-         <MeteorsDemo />
-         <MeteorsDemo />
-         <MeteorsDemo />
+         <MeteorsDemo
+            titile={"Search a job"}
+            description={
+               "Looking for your next career opportunity? Explore our job listings and find the perfect match for your skills and aspirations. Your dream job may be just a click away"
+            }
+         />
+         <MeteorsDemo
+            titile={"Apply for job"}
+            description={
+               "Ready to take the next step in your career? Browse our job openings and start your application process today. Your future awaits – apply for your dream job now"
+            }
+         />
+         <MeteorsDemo
+            titile={"Get your job"}
+            description={
+               "Unlock your career potential with us! Browse through our job listings and take the first step towards securing your dream job. Your future career is just a clicks away"
+            }
+         />
       </div>
    );
 }
