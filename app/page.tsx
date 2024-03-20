@@ -197,9 +197,27 @@ export default function Home() {
             </div>
             <div className="flex justify-center">
                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 justify-center gap-4 md:gap-6 lg:gap-16">
-                  <ThreeDCardDemo />
-                  <ThreeDCardDemo />
-                  <ThreeDCardDemo />
+                  <ThreeDCardDemo
+                     title={"Zerodha"}
+                     description={
+                        "Discount stock broker for online trading in India "
+                     }
+                     techId={"Finance"}
+                  />
+                  <ThreeDCardDemo
+                     title={"Myfuse.In"}
+                     description={
+                        "Job platform connecting candidates directly with employers"
+                     }
+                     techId={"Technology"}
+                  />
+                  <ThreeDCardDemo
+                     title={"Zepto"}
+                     description={
+                        "India's super-fast grocery delivery app (10-minute deliveries)"
+                     }
+                     techId={"E-Commerce"}
+                  />
                </div>
             </div>
          </div>
