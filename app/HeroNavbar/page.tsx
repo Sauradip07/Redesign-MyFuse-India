@@ -16,15 +16,19 @@ const menuItems = [
       href: "#",
    },
    {
-      name: "About",
+      name: "Jobs",
       href: "#",
    },
    {
-      name: "Contact",
+      name: "About Us",
       href: "#",
    },
    {
       name: "Blogs",
+      href: "#",
+   },
+   {
+      name: "Contact Us",
       href: "#",
    },
 ];
@@ -37,7 +41,7 @@ export function NavBarSection() {
    };
 
    return (
-      <header className="w-full bg-transparent pb-4 static">
+      <header className="w-full bg-transparent pb-4">
          <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 mt-4 border border-slate-500 rounded-lg">
             <div className="inline-flex items-center space-x-2">
                <span className="font-bold text-xl">MyFuse.In</span>
@@ -48,7 +52,7 @@ export function NavBarSection() {
                      <li key={item.name}>
                         <a
                            href={item.href}
-                           className="text-sm font-semibold text-gray-800 hover:text-gray-900">
+                           className="text-sm font-semibold text-white hover:text-slate-400">
                            {item.name}
                         </a>
                      </li>
@@ -103,7 +107,7 @@ export function NavBarSection() {
                         <button
                            type="button"
                            className="mt-4 w-full rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">
-                           Button text
+                           Login
                         </button>
                      </div>
                   </div>
