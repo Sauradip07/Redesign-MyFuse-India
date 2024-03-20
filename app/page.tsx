@@ -23,6 +23,7 @@ import { LampDemo } from "./LampEffect/page";
 import CompanyDemo from "./CompanyCard/page";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import { AuroraBackgroundDemo } from "./Hero/page";
+import { AnimatedTooltipPreview } from "./Devlopers/page";
 
 export default function Home() {
    const [jobs, setJobs] = useState([]);
@@ -172,8 +173,11 @@ export default function Home() {
             </div>
             <TripleMeteorsDemo />
          </div>
-         <div>
+         <div className="mt-20">
             <BlogCard />
+            <div className="mt-10">
+               <AnimatedTooltipPreview />
+            </div>
          </div>
          {/* online resume */}
          <div className="lg:mt-40 md:mt-32">
