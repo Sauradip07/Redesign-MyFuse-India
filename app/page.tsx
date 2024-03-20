@@ -197,7 +197,7 @@ export default function Home() {
                      Discover what our satisfied customers have to say about
                      their experiences with our products and services. Read
                      these testimonials to gain insights into the positive
-                     impact we've had on their lives
+                     impact we&apos;ve had on their lives
                   </p>
                </div>
                <InfiniteMovingCardsDemo />

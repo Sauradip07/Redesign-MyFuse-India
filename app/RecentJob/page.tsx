@@ -11,7 +11,7 @@ const JobList = ({
       <div className="max-w-7xl mx-auto">
          <div className="flex flex-col">
             {filteredJobs.map((job) => (
-               <JobCard job={job} icons={<SiAdobe />} handleTagClick={handleTagClick} />
+               <JobCard job={job} icons={<SiAdobe />} handleTagClick={handleTagClick} key={"1"}/>
             ))}
          </div>
       </div>

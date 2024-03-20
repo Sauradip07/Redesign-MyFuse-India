@@ -1,4 +1,5 @@
 // Import necessary dependencies and utilities
+"use client";
 import { cn } from "@/utils/cn"; // Importing a utility function for generating CSS class names
 import { AnimatePresence, motion } from "framer-motion"; // Importing components for animations from framer-motion library
 import Link from "next/link"; // Importing Link component from Next.js for client-side navigation

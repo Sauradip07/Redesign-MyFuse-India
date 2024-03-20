@@ -68,7 +68,7 @@ const JobCard = ({
          {/* Job tags */}
          <div className="flex flex-wrap items-center mt-4 mx-4 pt-4 border-t border-gray-500 border-solid sm:ml-auto sm:border-0 sm:pt-0">
             {tags.map((tag) => (
-               <button className="shadow-[0_0_0_3px_#000000_inset] px-6 py-2 m-2 bg-transparent border border-black dark:border-gray-800 dark:text-gray-400 text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
+               <button className="shadow-[0_0_0_3px_#000000_inset] px-6 py-2 m-2 bg-transparent border border-black dark:border-gray-800 dark:text-gray-400 text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400" key={"1"}>
                   {tag}
                </button>
             ))}
