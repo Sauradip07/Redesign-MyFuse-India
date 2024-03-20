@@ -24,6 +24,10 @@ import CompanyDemo from "./CompanyCard/page";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import { AuroraBackgroundDemo } from "./Hero/page";
 import { AnimatedTooltipPreview } from "./Devlopers/page";
+import { MdComputer } from "react-icons/md";
+import { RiContactsBook2Fill } from "react-icons/ri";
+import { LuCalendarCheck } from "react-icons/lu";
+import { GrBraille } from "react-icons/gr";
 
 export default function Home() {
    const [jobs, setJobs] = useState([]);
@@ -106,26 +110,31 @@ export default function Home() {
                <EvervaultCardDemo
                   title={"Right Job For You"}
                   description={
-                     "Myfuse's comprehensive platform is designed to help you discover the right job for you."
+                     "Myfuse's comprehensive platform is designed to help you discover the right job for you and many more support."
                   }
+                  icon={<MdComputer width={20} height={20} />}
+                  // icon={<UserIcon />}
                />
                <EvervaultCardDemo
-                  title={"One to One Coverstatiion With HR's"}
+                  title={"One to One Coverstatiion"}
                   description={
                      "MyFuse offers the unique advantage of one-to-one conversations with HR professionals"
                   }
+                  icon={<RiContactsBook2Fill width={20} height={20} />}
                />
                <EvervaultCardDemo
-                  title={"No Work Experiance required"}
+                  title={"No Work Experience required"}
                   description={
                      "Myfuse welcomes applicants with no work experience, providing valuable opportunities and resources"
                   }
+                  icon={<LuCalendarCheck width={20} height={20} />}
                />
                <EvervaultCardDemo
                   title={"Easy To Apply"}
                   description={
                      "Myfuse's straightforward application process is designed to be easy to apply"
                   }
+                  icon={<GrBraille width={12} height={12} />}
                />
             </div>
          </div>
